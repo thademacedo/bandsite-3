@@ -1,0 +1,263 @@
+@font-face {
+  font-family: "bandsite-primary-font";
+  src: url("../assets/fonts/AvenirNextLTPro-Regular.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  font-family: "bandsite-primary-font";
+}
+
+/** NAVIGATION BAR **/
+.main-nav {
+  background-color: #323232;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 1024px) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+ul.main-nav__list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+a.main-nav__link {
+  text-decoration: none;
+  color: white;
+  padding: 4rem;
+}
+
+.main-nav__title {
+  text-align: center;
+}
+
+/** HERO BANNER **/
+.hero-img {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../assets/images/hero-bio.jpg);
+  background-color: #fefaf5;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 5rem;
+  width: 100%;
+}
+
+.hero-text {
+  text-align: center;
+  padding-top: 9rem;
+  padding-bottom: 3rem;
+  color: white;
+}
+
+.hero-text__title {
+  margin: 1rem;
+  text-align: start;
+  padding-left: 1rem;
+}
+
+/** ABOUT **/
+.about,
+.about__body {
+  margin: 1rem;
+}
+@media (min-width: 768px) {
+  .about,
+  .about__body {
+    margin: 5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .about,
+  .about__body {
+    margin: 2.5rem;
+    border-color: 1px solid black;
+  }
+}
+
+.about__quote {
+  font-weight: bold;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .about__content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .about__content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__content-text1 {
+    padding-right: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .about__content-text1 {
+    padding-right: 4rem;
+  }
+}
+
+/** GALLERY **/
+.gallery-section {
+  background-color: #fafafa;
+}
+
+.gallery {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .gallery {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.gallery__title {
+  margin: 1rem;
+  padding-top: 1rem;
+}
+
+.gallery__images {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__pics {
+  padding: 0.5rem;
+}
+
+h2 {
+  margin: 1rem;
+}
+
+/** COMMENT SECTION **/
+.comment {
+  margin: 1rem;
+}
+
+.comment-section__img, .posted-comment__img {
+  max-width: 5rem;
+  max-height: 5rem;
+  border-radius: 48%;
+  margin-left: 4rem;
+}
+
+.comment-section {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 3rem;
+}
+@media (min-width: 768px) {
+  .comment-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1024px) {
+  .comment-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.posted-comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+
+.comment-section__form--button {
+  background-color: #323232;
+  color: white;
+  font-family: "bandsite-primary-font";
+}
+
+.posted-comment__form {
+  display: flex;
+}
+
+.module {
+  stroke: grey;
+  stroke-width: 1px;
+}
+
+/** FOOTER **/
+.footer-bar__top {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .footer-bar__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-bar__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.footer-bar {
+  background-color: #323232;
+  color: white;
+  padding: 1rem;
+}
+
+.footer-bar__ig {
+  width: 2rem;
+  margin: 1rem;
+}
+
+.footer-bar__fb {
+  width: 1rem;
+  margin: 1rem;
+}
+
+.footer-bar__tt {
+  width: 2rem;
+  margin: 1rem;
+}
+
+.footer-bar__name {
+  font-weight: bold;
+}

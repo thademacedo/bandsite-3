@@ -1,0 +1,233 @@
+@use "./partials" as *;
+
+$primary-font: "bandsite-primary-font";
+@font-face {
+  font-family: $primary-font;
+  src: url("../assets/fonts/AvenirNextLTPro-Regular.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: $primary-font;
+}
+
+/** NAVIGATION BAR **/
+
+.main-nav {
+  background-color: #323232;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  }
+
+
+ul.main-nav__list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+a.main-nav__link {
+  text-decoration: none;
+  color: white;
+  padding: 4rem;
+}
+
+.main-nav__title {
+  text-align: center;
+}
+
+/** HERO BANNER **/
+
+.hero-img, .show-banner {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(../assets/images/hero-bio.jpg);
+  background-color: #fefaf5;
+  background-size: cover;
+  object-fit: cover;
+  // width: 5rem;
+  // width: 100%;
+}
+
+.hero-text {
+  text-align: center;
+  padding-top: 9rem;
+  padding-bottom: 3rem;
+  color: white;
+}
+
+.hero-text__title {
+  margin: 1rem;
+  text-align: start;
+  padding-left: 1rem;
+}
+
+.show-banner__row-subtitle, .show-banner__row-title {
+  color: white;
+  margin-left: 1rem;
+}
+
+/**SHOWS SECTION**/
+
+.section {
+  display: flex;
+  align-self: center;
+  font-family: $primary-font;
+}
+.section__show {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  font-family: $primary-font;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+
+h2 {
+  font-family: $primary-font;
+  margin-left: 1rem;
+}
+.section__show-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  margin-bottom: 10px;
+  padding: 16px 0;
+  font-family: $primary-font;
+}
+@media (min-width: 768px) {
+  .section__show-info {
+    flex-direction: row;
+  }
+}
+.section__show-info-title {
+  color: #afafaf;
+  font-weight: bold;
+  font-family: $primary-font;
+}
+@media (min-width: 768px) {
+  .section__show-info-title {
+    flex-direction: row;
+  }
+}
+.section__show-info-dates {
+  color: #323232;
+  font-family: $primary-font;
+  padding: 10px 0;
+}
+@media (min-width: 768px) {
+  .section__show-info-dates {
+    flex-direction: row-reverse;
+  }
+}
+.section__show-info-details {
+  color: #323232;
+  padding: 10px 0;
+}
+@media (min-width: 768px) {
+  .section__show-info-details {
+    flex-direction: row;
+  }
+}
+.section__show-ticket {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  border-bottom: 1px solid #afafaf;
+}
+.section__show-ticket-button {
+  background-color: #323232;
+  color: #ffffff;
+  font-family: $primary-font;
+  padding: 8px 32px;
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .section__show-ticket-button {
+    width: auto;
+    // padding: 3rem;
+    flex-direction: row;
+  }
+}
+.section__show-ticket-button:hover {
+  background-color: #000000;
+}
+@media (min-width: 768px) {
+  .section__show {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .section {
+    width: auto;
+    padding: 48px 36px 36px 6px;
+  }
+}
+
+/** FOOTER **/
+
+.footer-bar__top {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.footer-bar {
+  background-color: #323232;
+  color: white;
+  padding: 1rem;
+}
+
+.footer-bar__ig {
+  width: 2rem;
+  margin: 1rem;
+}
+
+.footer-bar__fb {
+  width: 1rem;
+  margin: 1rem;
+}
+
+.footer-bar__tt {
+  width: 2rem;
+  margin: 1rem;
+}
+
+.footer-bar__name {
+  font-weight: bold;
+}
