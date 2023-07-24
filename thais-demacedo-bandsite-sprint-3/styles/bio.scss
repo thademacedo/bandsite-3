@@ -1,0 +1,144 @@
+@use "./partials" as *;
+
+$primary-font: "bandsite-primary-font";
+@font-face {
+  font-family: $primary-font;
+  src: url("../assets/fonts/AvenirNextLTPro-Regular.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: $primary-font;
+}
+
+/** HERO BANNER **/
+
+.hero-img {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(../assets/images/hero-bio.jpg);
+  background-color: #fefaf5;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-text {
+  text-align: center;
+  padding-top: 9rem;
+  padding-bottom: 3rem;
+  color: white;
+}
+
+.hero-text__title {
+  margin: 1rem;
+  text-align: start;
+  padding-left: 1rem;
+}
+
+/** ABOUT **/
+
+.about__band-img {
+  background-position: center;
+  background-size: cover;
+}
+
+.about,
+.about__body {
+  margin: 1rem;
+  @media (min-width: 768px) {
+    margin: 5rem;
+  }
+  @media (min-width: 1024px) {
+    margin: 2.5rem;
+    border-color: 1px solid black;
+  }
+}
+.about__quote {
+  font-weight: 600;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.about__content-text1 {
+  @media (min-width: 768px) {
+    padding-right: 4rem;
+  }
+  @media (min-width: 1024px) {
+    padding-right: 4rem;
+  }
+}
+
+/** GALLERY **/
+
+.gallery-section {
+  background-color: #fafafa;
+}
+
+.gallery {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.gallery__title {
+  margin: 1rem;
+  padding-top: 1rem;
+}
+
+.gallery__images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery__pics {
+  padding: 0.5rem;
+  background-position: center;
+  background-size: cover;
+}
+
+h2 {
+  margin: 1rem;
+}
+
+// COMMENTS
+
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 3rem;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+
+
+
+
+
